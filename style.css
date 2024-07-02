@@ -1,0 +1,602 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+    color: white;
+    list-style: none;
+    font-family: 'changa one', 'sans serif';
+}
+
+/* //////////////////////////////////////////////////////////////////
+HEADER
+//////////////////////////////////////////////////////////////// */
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 105px;
+}
+
+.headerContainer {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 105px;
+    width: 100%;
+}
+.headerNav {
+    list-style: none;
+    display: inline-flex;
+}
+
+.headerNav li a {
+    text-decoration: none;
+    color: #D9D9D9;
+
+}
+
+.headerNav li {
+    padding-right: 27px;
+}
+
+.pageIndicator {
+    border-bottom: solid 10px #D9D9D9;
+}
+
+.linkHover:hover {
+    border-bottom: solid 10px #D9D9D9;
+}
+
+.navLogo {
+    height: 105px;
+    width: 132px;
+    zoom: 150%;
+}
+
+/* CART ICON */
+.cartIcon {
+    margin: 16px;
+    zoom: 150%;
+    padding-right: 30px;
+}
+
+.hamburger {
+    height: 0%;
+    display: none;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    .headerNav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: black;
+        position: absolute;
+        top: 105px;
+        left: 0;
+    }
+
+    .home {
+        border-bottom: none;
+    }
+
+    .home:hover {
+        border-bottom: solid 10px #D9D9D9;
+    }
+
+    .headerNav.show {
+        display: flex;
+    }
+
+    .headerNav li {
+        padding: 20px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .cartIcon {
+        display: none;
+    }
+
+    .hamburger {
+        height: 25px;
+        display: block;
+        padding-right: 30px;
+        cursor: pointer;
+    }
+}
+
+/* //////////////////////////////////////////////////////////////////
+MAIN SECTION
+//////////////////////////////////////////////////////////////// */
+
+main {
+    display: flex;
+    background: linear-gradient(black, 30%, #FF914E 50%);
+    height: 704px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainContent {
+    margin-bottom: 5%;
+    padding-left: 12.5px;
+}
+
+.heroLogo {
+    height: 560px;
+    padding-right: 12.5px;
+}
+
+.headerOne {
+    font-size: 90px;
+    line-height: 1.2;
+    letter-spacing: 3px;
+    white-space: wrap;
+    margin-bottom: 35px;
+}
+
+/* CTA BUTTON */
+.demoBTN {
+    text-decoration: none;
+    color: black;
+    background: white;
+    padding: 16px 35px;
+    display: inline-flex;
+    border: 2px solid black;
+}
+
+.demoBTN:hover {
+    filter: drop-shadow(-3px 3px);
+}
+
+.fa-arrow-right {
+    zoom: 125%;
+    padding-left: 10px;
+}
+
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: linear-gradient(black, 15%, #FF914E 50%);
+        height: 1100px;
+    }
+
+    .headerOne {
+        white-space: normal;
+        margin-top: 0px;
+        font-size: 80px;
+    }
+
+    .mainContent {
+        padding-left: 0;
+        margin: 0 16px;
+    }
+
+    .demoBTN {
+        display: block;
+        width: fill;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 431px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: linear-gradient(black, 15%, #FF914E 50%);
+        height: 1100px;
+    }
+
+    .mainContent {
+        margin: 0 16px;
+    }
+
+    .headerOne {
+        font-size: 72px;
+        white-space: normal;
+        margin-top: 0px;
+    }
+
+    .heroLogo {
+        height: 460px;
+        padding-right: 0px;
+    }
+
+    .demoBTN {
+        display: block;
+        width: fill;
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width: 376px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: linear-gradient(black, 15%, #FF914E 50%);
+        height: 1000px;
+    }
+
+    .mainContent {
+        margin: 0 16px;
+    }
+
+    .headerOne {
+        font-size: 64px;
+        white-space: normal;
+        margin-top: 0px;
+    }
+
+    .heroLogo {
+        height: 400px;
+        padding-right: 0px;
+    }
+
+    .demoBTN {
+        display: block;
+        width: fill;
+        text-align: center;
+    }
+}
+
+/* //////////////////////////////////////////////////////////////////
+NEW MUSIC AD SECTION
+//////////////////////////////////////////////////////////////// */
+.zebra {
+    display: flex;
+    height: 226px;
+    background: linear-gradient(0.25turn, #AEAEAE, #DEDEDE, #AEAEAE);
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.img-content-container {
+    display: flex;
+    justify-content: center;
+    background-image: url(images/opaque-ad-decal-left.png), url(images/opaque-ad-decal-right.png);
+    background-position: left bottom, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size:auto 300px, auto 300px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+aside {
+    color: black;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    z-index: 1;
+    opacity: 1;
+}
+
+.lightningBolt {
+    height: 60px;
+    margin-top: 40px;
+    padding: 0 30px;
+}
+
+.newMusic {
+    display: flex;
+    justify-content: center;
+}
+
+.availableNow {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.artistFeature {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+/* LISTEN NOW BUTTON */
+.listenNow {
+    text-decoration: none;
+    color: black;
+    background: #E9BD1C;
+    padding: 12px 36px;
+    border: 2px solid black;
+}
+.listenNow:hover {
+    filter: drop-shadow(-3px 3px);
+}
+
+/* Media Queries for Mobile and Tablet */
+@media (max-width: 768px) {
+    .img-content-container {
+        background-image: none;
+    }
+
+    .availableNow {
+        font-size: 36px;
+    }
+
+    .artistFeature {
+        font-size: 18px;
+    }
+
+    .listenNow {
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .img-content-container {
+        background-image: none;
+    }
+
+    .availableNow {
+        font-size: 28px; 
+    }
+
+    .artistFeature {
+        font-size: 16px; 
+    }
+
+    .listenNow {
+        padding: 8px 24px; 
+    }
+}
+
+
+/* //////////////////////////////////////////////////////////////////
+UPCOMING EVENTS SECTION
+//////////////////////////////////////////////////////////////// */
+
+.container-upcomingEvents {
+    margin: 116px 0;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.line {
+    justify-content: center;
+    padding-top: 22px;
+    border-top: 3px solid white;
+    width: 60px;
+    margin-bottom: 50px;
+}
+
+.events-flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.eventsContainerWidth {
+    width: 1200px;
+}
+
+.eventsContainer {
+   display: flex;
+   justify-content: space-between;
+}
+
+.eventsColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.events-heading-container {
+    display: flex;
+    justify-content: center;
+}
+
+.events-heading {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    margin-bottom: 23px;
+}
+
+.eventsColumn li {
+    padding-bottom: 23px;
+}
+
+.eventsColumn li a {
+    color: white;
+}
+
+/* Hidden mobile responsive styling for events section */
+
+
+.responsiveEventsColumn {
+    display: none;
+    justify-content: space-between;
+}
+
+.responsiveEventsColumn a {
+    color: white;
+}
+
+.responsiveEventsColumnPadding {
+    padding-bottom: 46px;
+}
+
+/* Media Queries for Mobile and Tablet */
+@media (max-width: 768px) {
+    .responsiveEventsColumn {
+        display: flex;
+    }
+    .events-flex-container {
+        display: none;
+    }
+    .responsiveEventsContainer {
+        margin: 0 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .responsiveEventsColumn{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .responsiveEventsColumn li, a {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 8px;
+    }
+}
+
+/* //////////////////////////////////////////////////////////////////
+FOLLOW US ON INSTAGRAM SECTION
+//////////////////////////////////////////////////////////////// */
+
+
+.followUs {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 116px;
+}
+
+.instaFeed {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Media Query for responsiveness */
+@media (max-width: 376px) {
+    .headingFollowUs {
+        font-size: 30px;
+    }
+}
+
+/* //////////////////////////////////////////////////////////////////
+DEMO SUBMISSION SECTION
+//////////////////////////////////////////////////////////////// */
+
+.emailText {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.demoSubmission {
+    display: flex;
+    justify-content: center;
+}
+
+.submitDemoBackground {
+    padding: 40px 20px;
+    background: white;
+}
+
+.demoSubmission a {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #D9D9D9;
+    padding: 30px 75px;
+}
+
+@media (max-width: 480px) {
+    .demoSubmissionSection {
+        margin: 0 16px;
+    }
+
+    .submitDemoBackground {
+        padding: 40px 40px;
+    }
+}
+
+/* //////////////////////////////////////////////////////////////////
+FOOTER
+//////////////////////////////////////////////////////////////// */
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 116px;
+}
+
+.navContainer {
+    width: 1200px;
+    margin-top: 16px;
+    border-top: 3px solid white;
+    margin: 0 16px;
+}
+
+footer nav li {
+    list-style: none;
+}
+
+footer nav li a {
+    text-decoration: none;
+    color: #D9D9D9;
+}
+
+.footerNav:hover {
+    border-bottom: solid 10px #D9D9D9;
+}
+
+.listContainer {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0;
+}
+
+.anchorContainer {
+    padding-right: 16px;
+}
+
+.fa-brands {
+    list-style: none;
+    zoom: 200%;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 500px) {
+    .footerContainer {
+        width: 335px;
+    }
+
+    .listContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 0;
+        padding-top: 160px;
+        margin: 0;
+    }
+
+    .anchorContainer {
+        padding-bottom: 18px;
+        padding-right: 0px;
+    }
+
+    .fa-brands {
+        padding-bottom: 5px;
+    }
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="images/nopermit-favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/150b9f1324.js" crossorigin="anonymous"></script>
+  <title>No Permit Records</title>
+</head>
+<body>
+
+  <!----------------HEADER ------------------------->
+  <header>
+    <section class="headerContainer">
+      <nav>
+        <a href="index.html"> <img src="images/headerlogowhite.png" alt="logo" class="navLogo"> </a>
+        <ul class="headerNav">
+          <li> <a href="index.html" class="pageIndicator">HOME</a> </li>
+          <li> <a href="#" class="linkHover">SHOP</a> </li>
+          <li> <a href="#" class="linkHover">ARTISTS</a> </li>
+          <li> <a href="#" class="linkHover">MUSIC</a> </li>
+          <li> <a href="about.html" class="linkHover">ABOUT</a> </li>
+        </ul>
+        <a href="#" class="cartIcon"> <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> </a>
+        <img src="images/menu.png" alt="hamburger menu" class="hamburger" onclick="toggleMenu()">
+      </nav>
+    </section>
+  </header>
+
+  <!----------------MAIN SECTION ------------------------->
+  <main>
+    <img src="images/hero_logo.png" alt="no permit records logo" class="heroLogo">
+    <section class="mainContent">
+      <h1 class="headerOne">UNLEASH YOUR<br>CREATIVITY</h1>
+      <a href="#" id="submitDemoButton" class="demoBTN">SUBMIT DEMO<i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a>
+    </section>
+  </main>
+
+
+  <!----------------NEW MUSIC AD ------------------------->
+  <section class="zebra">
+    <div class="img-content-container">
+      <aside>
+        <section class="newMusic">
+          <h3 class="availableNow">NEW MUSIC AVAILABLE NOW</h3>
+        </section>
+        <span class="newMusic artistFeature">John Doe - 'Let it Ride'</span>
+        <a href="#" class="listenNow">LISTEN NOW</a>
+      </aside>
+    </div>
+  </section>
+
+
+
+  <!----------------UPCOMING EVENTS SECTION ------------------------->
+  <section class="container-upcomingEvents">
+    <h2 class="heading">UPCOMING EVENTS</h2>
+    <div class="heading">
+      <div class="line"></div>
+    </div>
+    <section class="events-flex-container">
+      <section class="eventsContainerWidth">
+        <section class="eventsContainer">
+          <section class="eventsColumn">
+          <div class="events-heading-container"><span class="events-heading">DATE</span></div>
+          <li>JULY 5TH, 2024</li>
+          <li>JULY 6TH, 2024</li> 
+          <li>JULY 12TH, 2024</li>
+          </section>
+          <section class="eventsColumn">
+            <div class="events-heading-container"><span class="events-heading">ARTIST</span></div>
+            <li>ADAM VAUGHN</li>
+            <li>FAMA (US)</li> 
+            <li>ANTHONY SOSA</li>
+          </section>
+          <section class="eventsColumn">
+            <div class="events-heading-container"><span class="events-heading">VENUE</span></div>
+            <li>UNTIY EVENTS @ DISCOPUSSY</li>
+            <li>UNITY EVENTS @ PV AVENUE</li> 
+            <li>4B @ NOTO</li>
+          </section>
+          <section class="eventsColumn">
+            <div class="events-heading-container"><span class="events-heading">LOCATION</span></div>
+            <li>LAS VEGAS, NV</li>
+            <li>SAN DIEGO, CA</li> 
+            <li>PHILADELPHIA, PA</li>
+          </section>
+          <section class="eventsColumn">
+            <div class="events-heading-container"><span class="events-heading">TICKETS</span></div>
+            <li><a href="https://posh.vip/f/fc5f?t=website" target="_blank" rel="noopener noreferrer">CLICK HERE FOR TICKETS</a></li>
+            <li><a href="https://posh.vip/e/red-white-sippin-yak?t=igstory" target="_blank" rel="noopener noreferrer">CLICK HERE FOR TICKETS</a></li> 
+            <li><a href="https://linkstub.com/en/4knzc8aKWJ?ref=ku23e" target="_blank" rel="noopener noreferrer">CLICK HERE FOR TICKETS</a></li>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!-- responsive events view -->
+    <section class="responsiveEventsContainer">
+      <section class="responsiveEventsColumn responsiveEventsColumnPadding">
+        <div>
+          <li>JULY 5TH, 2024</li>
+          <li>ADAM VAUGHN</li>
+          <li>UNITY EVENTS @ DISCOPUSSY</li>
+          <li>LAS VEGAS, NV</li>
+        </div>
+        <div><a href="https://posh.vip/f/fc5f?t=website" target="_blank" rel="noopener noreferrer">CLICK HERE FOR TICKETS</a></div>
+      </section>
+
+      <section class="responsiveEventsColumn responsiveEventsColumnPadding">
+        <div>
+          <li>JULY 6TH, 2024</li>
+          <li>FAMA (US)</li>
+          <li>UNITY EVENTS @ PV AVENUE</li>
+          <li>SAN DIEGO, CA</li>
+        </div>
+        <div><a href="https://posh.vip/e/red-white-sippin-yak?t=igstory" target="_blank" rel="noopener noreferrer">CLICK HERE FOR TICKETS</a></div>
+      </section>
+      <section class="responsiveEventsColumn">
+        <div>
+          <li>JULY 12TH, 2024</li>
+          <li>ANTHONY SOSA</li>
+          <li>4B @ NOTO</li>
+          <li>PHILADELPHIA, PA</li>
+        </div>
+        <div><a href="https://linkstub.com/en/4knzc8aKWJ?ref=ku23e" target="_blank" rel="noopener noreferrer">CLICK HERE FOR TICKETS</a></div>
+      </section>
+    </section>
+  </section>
+
+
+
+
+<!----------------FOLLOW US ON INSTAGRAM SECTION ------------------------->
+<section class="followUs">
+  <h3 class="heading headingFollowUs">FOLLOW US ON INSTAGRAM</h3>
+  <div class="heading">
+    <div class="line"></div>
+  </div>
+  <section class="instaFeed">
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-4c866818-e036-4f46-9a01-254776c61472" data-elfsight-app-lazy></div>
+  </section>
+</section>
+
+
+
+<!----------------DEMO SUBMISSION SECTION ------------------------->
+<section id="demoSubmissionSection" class="followUs">
+  <h2 class="heading">DEMO SUBMISSION</h2>
+  <div class="heading">
+    <div class="line"></div>
+  </div>
+  <span class="emailText">Email us your demo and we'll get back to you!</span>
+  <section class="demoSubmission">
+    <div class="submitDemoBackground">
+      <a href="mailto:demos.nopermit@gmail.com?subject=Demo%20Submission&body=Check%20out%20my%20track!">Submit Demo</a>
+    </div>
+  </section>
+</section>
+
+
+
+<!----------------FOOTER ------------------------->
+<footer>
+  <nav class="navContainer">
+      <ul class="listContainer">
+        <li class="anchorContainer"><a href="#"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a></li>
+        <li class="anchorContainer"><a href="#"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a></li>
+        <li class="anchorContainer"><a href="#"><i class="fa-brands fa-square-x-twitter" style="color: #ffffff;"></i></a></li>
+      </ul>
+      <ul class="listContainer">
+        <li class="anchorContainer"><a href="index.html" class="footerNav">HOME</a></li>
+        <li class="anchorContainer"><a href="#" class="footerNav">SHOP</a></li>
+        <li class="anchorContainer"><a href="#" class="footerNav">ARTISTS</a></li>
+        <li class="anchorContainer"><a href="#" class="footerNav">MUSIC</a></li>
+        <li class="anchorContainer"><a href="about.html" class="footerNav">ABOUT</a></li>
+      </ul>
+  </nav>
+</footer>
+
+
+
+<script src="index.js"></script>
+</body>
+</html>
