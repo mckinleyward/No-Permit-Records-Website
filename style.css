@@ -432,6 +432,10 @@ UPCOMING EVENTS SECTION
 }
 
 @media (max-width: 480px) {
+    .heading {
+        font-size: 28px;
+    }
+    
     .responsiveEventsColumn{
         display: flex;
         flex-direction: column;
