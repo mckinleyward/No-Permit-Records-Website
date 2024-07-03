@@ -193,7 +193,6 @@ main {
 
     .mainContent {
         padding-left: 0;
-        margin: 0 16px;
         text-align: center;
     }
 
@@ -210,10 +209,6 @@ main {
     main {
         height: 700px;
         padding: 0 16px 100px 16px;
-    }
-
-    .mainContent {
-        margin: 0 16px;
     }
 
     .headerOne {
