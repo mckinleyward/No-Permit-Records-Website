@@ -87,6 +87,7 @@ nav {
         position: absolute;
         top: 105px;
         left: 0;
+        padding-left: 0;
     }
 
     .home {
@@ -104,7 +105,11 @@ nav {
     .headerNav li {
         padding: 20px 0;
         text-align: center;
-        width: 100%;
+    }
+
+    .headerNav li a {
+        display: inline-block;
+        padding: 0 10;
     }
 
     .cartIcon {
@@ -176,7 +181,8 @@ main {
         flex-direction: column;
         justify-content: center;
         background: linear-gradient(black, 15%, #FF914E 50%);
-        height: 1100px;
+        height: 700px;
+        padding: 100px;
     }
 
     .headerOne {
@@ -188,23 +194,22 @@ main {
     .mainContent {
         padding-left: 0;
         margin: 0 16px;
+        text-align: center;
     }
 
     .demoBTN {
         display: block;
-        width: fill;
+        width: 100%;
         text-align: center;
+        box-sizing: border-box;
     }
 
 }
 
 @media (max-width: 431px) {
     main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background: linear-gradient(black, 15%, #FF914E 50%);
-        height: 1100px;
+        height: 700px;
+        padding: 100px;
     }
 
     .mainContent {
@@ -213,52 +218,25 @@ main {
 
     .headerOne {
         font-size: 72px;
-        white-space: normal;
-        margin-top: 0px;
     }
 
     .heroLogo {
-        height: 460px;
+        height: 430px;
         padding-right: 0px;
     }
-
-    .demoBTN {
-        display: block;
-        width: fill;
-        text-align: center;
-    }
-
-
 }
 
 @media (max-width: 376px) {
     main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background: linear-gradient(black, 15%, #FF914E 50%);
-        height: 1000px;
+        height: 700px;
+        padding: 100px;
     }
-
-    .mainContent {
-        margin: 0 16px;
-    }
-
     .headerOne {
         font-size: 64px;
-        white-space: normal;
-        margin-top: 0px;
     }
 
     .heroLogo {
         height: 400px;
-        padding-right: 0px;
-    }
-
-    .demoBTN {
-        display: block;
-        width: fill;
-        text-align: center;
     }
 }
 
