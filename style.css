@@ -432,10 +432,6 @@ UPCOMING EVENTS SECTION
 }
 
 @media (max-width: 480px) {
-    .heading {
-        font-size: 28px;
-    }
-    
     .responsiveEventsColumn{
         display: flex;
         flex-direction: column;
@@ -466,9 +462,9 @@ FOLLOW US ON INSTAGRAM SECTION
 
 
 /* Media Query for responsiveness */
-@media (max-width: 376px) {
+@media (max-width: 480px) {
     .headingFollowUs {
-        font-size: 30px;
+        margin-left: 16px;
     }
 }
 
