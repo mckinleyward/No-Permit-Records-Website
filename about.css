@@ -62,7 +62,9 @@ nav {
 .navLogo {
     height: 105px;
     width: 132px;
-    zoom: 150%;
+    zoom: 75%;
+    margin-left: 16px;
+    margin-top: 10px;
 }
 
 /* CART ICON */
