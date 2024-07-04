@@ -552,6 +552,13 @@ footer nav li a {
     zoom: 200%;
 }
 
+.beatPortLogo {
+    width: 25px;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding-top: 3px;
+}
+
 /* Media Query for responsiveness */
 @media (max-width: 500px) {
     .footerContainer {
