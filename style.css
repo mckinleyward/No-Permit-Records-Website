@@ -554,7 +554,7 @@ footer nav li a {
     width: 25px;
     border: 2px solid white;
     border-radius: 5px;
-    padding-top: 3px;
+    padding-top: 2px;
 }
 
 /* Media Query for responsiveness */
@@ -570,6 +570,9 @@ footer nav li a {
         padding-left: 0;
         padding-top: 160px;
         margin: 0;
+    }
+    .list-container-one {
+        margin-top: 42px;
     }
 
     .anchorContainer {
