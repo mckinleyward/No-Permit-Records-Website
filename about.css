@@ -62,7 +62,7 @@ nav {
 .navLogo {
     height: 105px;
     width: 132px;
-    zoom: 150%;
+    zoom: 75%;
 }
 
 /* CART ICON */
@@ -79,6 +79,10 @@ nav {
 
 /* Media Query for responsiveness */
 @media (max-width: 768px) {
+    .navLogo {
+        margin: 5px 0 0 16px;
+    }
+
     .headerNav {
         display: none;
         flex-direction: column;
@@ -115,7 +119,7 @@ nav {
     .hamburger {
         height: 25px;
         display: block;
-        padding-right: 30px;
+        padding-right: 16px;
         cursor: pointer;
     }
 }
@@ -308,12 +312,15 @@ footer nav li a {
         flex-direction: column;
         justify-content: center;
         padding-left: 0;
-        padding-top: 160px;
+        padding-top: 62px;
         margin: 0;
     }
 
+    .listContainer .anchorContainer .footerNav {
+        padding-bottom: 8px;
+    }
     .list-container-one {
-        margin-top: 42px;
+        margin-top: 130px;
     }
 
     .anchorContainer {
