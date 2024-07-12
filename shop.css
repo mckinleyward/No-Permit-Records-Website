@@ -1,0 +1,232 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+    color: white;
+    list-style: none;
+    font-family: 'changa one', 'sans serif';
+}
+
+/* //////////////////////////////////////////////////////////////////
+HEADER
+//////////////////////////////////////////////////////////////// */
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 105px;
+}
+
+.headerContainer {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 105px;
+    width: 100%;
+}
+.headerNav {
+    list-style: none;
+    display: inline-flex;
+}
+
+.headerNav li a {
+    text-decoration: none;
+    color: #D9D9D9;
+
+}
+
+.headerNav li {
+    padding-right: 27px;
+}
+
+.pageIndicator {
+    border-bottom: solid 10px #D9D9D9;
+}
+
+.linkHover:hover {
+    border-bottom: solid 10px #D9D9D9;
+}
+
+.navLogo {
+    height: 105px;
+    width: 132px;
+    zoom: 75%;
+}
+
+/* CART ICON */
+.cartIcon {
+    margin: 16px;
+    zoom: 150%;
+    padding-right: 30px;
+}
+
+.hamburger {
+    height: 0%;
+    display: none;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    .navLogo {
+        margin: 5px 0 0 16px;
+    }
+    .headerNav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: black;
+        position: absolute;
+        top: 105px;
+        left: 0;
+        padding-left: 0;
+        z-index: 1000;
+        margin: 0;
+    }
+
+    .headerNav.show {
+        display: flex;
+    }
+
+    .headerNav li {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .headerNav li a {
+        display: inline-block;
+        padding: 0 10;
+    }
+
+    .cartIcon {
+        display: none;
+    }
+
+    .hamburger {
+        height: 25px;
+        display: block;
+        padding-right: 16px;
+        cursor: pointer;
+    }
+}
+
+
+
+/* //////////////////////////////////////////////////////////////////
+UNDER CONSTRUCTION IMAGE
+//////////////////////////////////////////////////////////////// */
+.underConstructionSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 116px;
+}
+
+.illustration {
+    width: 366px;
+}
+
+/* MOBILE RESPONSIVE MEDIA QUERY */
+@media (max-width: 480px) {
+    .illustration{
+        width: 275px;
+    }
+}
+
+
+/* //////////////////////////////////////////////////////////////////
+FOOTER
+//////////////////////////////////////////////////////////////// */
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 116px;
+    margin-top: 149px;
+}
+
+.navContainer {
+    width: 1200px;
+    margin-top: 16px;
+    border-top: 3px solid white;
+    margin: 0 16px;
+}
+
+footer nav li {
+    list-style: none;
+}
+
+footer nav li a {
+    text-decoration: none;
+    color: #D9D9D9;
+}
+
+.footerNav:hover {
+    border-bottom: solid 10px #D9D9D9;
+}
+
+.listContainer {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0;
+}
+
+.anchorContainer {
+    padding-right: 16px;
+}
+
+.fa-brands {
+    list-style: none;
+    zoom: 200%;
+}
+
+.beatPortLogo {
+    width: 25px;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding-top: 2px;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 500px) {
+    .footerContainer {
+        width: 335px;
+    }
+
+    .listContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 0;
+        padding-top: 62px;
+        margin: 0;
+    }
+
+    .listContainer .anchorContainer .footerNav {
+        padding-bottom: 8px;
+    }
+    .list-container-one {
+        margin-top: 130px;
+    }
+
+    .anchorContainer {
+        padding-bottom: 18px;
+        padding-right: 0px;
+    }
+
+    .fa-brands {
+        padding-bottom: 5px;
+    }
+}
