@@ -13,3 +13,24 @@ document.addEventListener("DOMContentLoaded", function() {
       demoSection.scrollIntoView({ behavior: "smooth" });
     });
 });
+
+// fade in animation
+
+const content = document.querySelectorAll(".fadeInUp");
+
+document.addEventListener("scroll", function () {
+  content.forEach((fadeInUp) => {
+    if (isInView(fadeInUp)) {
+      fadeInUp.classList.add("fadeInUp--visible");
+    }
+  });
+});
+
+function isInView(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.bottom > 0 &&
+    rect.top <
+      (window.innerHeight - 150 || documentElement.clientHeight - 150)
+  );
+}
