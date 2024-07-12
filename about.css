@@ -102,7 +102,7 @@ nav {
         border-bottom: solid 10px #D9D9D9;
     }
 
-    .headerNav.show {
+    .show {
         display: flex;
     }
 
@@ -202,6 +202,51 @@ article section {
 
 .articleContainerTwo .underline {
     height: 9px;
+}
+
+.fadeInOpen {
+	-webkit-animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+/**
+ * ----------------------------------------
+ * animation fade-in-bottom
+ * ----------------------------------------
+ */
+ @-webkit-keyframes fade-in-bottom {
+    0% {
+      -webkit-transform: translateY(50px);
+              transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-bottom {
+    0% {
+      -webkit-transform: translateY(50px);
+              transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+.fadeInUp {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.fadeInUp--visible {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 /* Media Queries for Mobile and Tablet */
